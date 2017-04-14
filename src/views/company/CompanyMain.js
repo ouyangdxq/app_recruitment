@@ -48,7 +48,8 @@ class CompanyMain extends BaseComponent {
                     style={{flex:1}}
                     showsVerticalScrollIndicator={false}
                 >
-                    <View style={{alignItems:'center',padding:18}}>
+                    <View style={{alignItems:'center',padding:18,backgroundColor:'white',borderBottomColor:'#e5e5e5',
+                        borderBottomWidth:1,}}>
                         <Image source={{uri:'test'}}
                                style={{
                                    width: 66,
@@ -127,7 +128,7 @@ const styles = StyleSheet.create({
 
     },
     ButtonBGStyle: {
-        marginTop:70,
+        marginTop:74,
         padding: Space-2,
         marginLeft:Space,
         marginRight:Space,
