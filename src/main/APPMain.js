@@ -53,6 +53,16 @@ class APPMain extends Component {
                 tabBarStyle={{ height: Layout.tabBarHeight+4,paddingBottom: 6,backgroundColor:'white' }}
                 //tabBarShadowStyle={{width:0,height:0}}
             >
+                <TabNavigator.Item
+                    title="公司"
+                    selected={this.state.selectedTab === 'company'}
+                    selectedTitleStyle={styles.selectedTitleStyle}
+                    titleStyle={styles.textStyle}
+                    renderIcon={() => <Image source={{uri:'home'}} style={styles.iconStyle}/>}
+                    renderSelectedIcon={() => <Image source={{uri:'home1'}} style={styles.iconStyle}/>}
+                    onPress={this._clickCompany.bind(this)}>
+                    <CompanyMain {...this.props}/>
+                </TabNavigator.Item>
 
                 <TabNavigator.Item
                     title="职位"
@@ -65,16 +75,7 @@ class APPMain extends Component {
                     <PositionMain {...this.props}/>
                 </TabNavigator.Item>
 
-                <TabNavigator.Item
-                    title="公司"
-                    selected={this.state.selectedTab === 'company'}
-                    selectedTitleStyle={styles.selectedTitleStyle}
-                    titleStyle={styles.textStyle}
-                    renderIcon={() => <Image source={{uri:'home'}} style={styles.iconStyle}/>}
-                    renderSelectedIcon={() => <Image source={{uri:'home1'}} style={styles.iconStyle}/>}
-                    onPress={this._clickCompany.bind(this)}>
-                    <CompanyMain {...this.props}/>
-                </TabNavigator.Item>
+
 
                 <TabNavigator.Item
                     title="消息"

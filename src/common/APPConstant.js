@@ -25,15 +25,20 @@ var Space = 15;//控件间的间隔
 //BottomColor:'rgba(52,53,61,0.5)'cell线
 
 var isDebugVersion = true;
-const FontSize15 = 15;
+const FontSize18 = 18;
 const FontSize13 = 13;
 const ItemMinHeight=50;
 {/*红色背景*/ }
 const TitleBarBackGroundColor = '#f7741a';
 const PlaceholderColor = '#c7c7cd';
+const AppBGColor ='#ebebeb';
 //分割线
 const BorderBottomC = '#e1e1e1';
 const BorderBottomW = 1;
+//文字颜色主色和副色
+const MainTextColor='#484848';
+const SubTextColor='#959595';
+
 //分割线
 var LineView = React.createClass({
 
@@ -74,9 +79,11 @@ const styles = StyleSheet.create({
 
 module.exports = {
     TitleBarBackGroundColor:TitleBarBackGroundColor,
+    AppMainColor:TitleBarBackGroundColor,
+    AppBGColor:AppBGColor,//页面背景色
     TitleBarHeight:Platform.OS === 'android'?48:64,
     PlaceholderColor:PlaceholderColor,
-    FontSize15:FontSize15,
+    FontSize18:FontSize18,
     FontSize13:FontSize13,
     screenWidth:screenWidth,
     screenHeight:screenHeight,
@@ -85,6 +92,8 @@ module.exports = {
     ItemMinHeight:ItemMinHeight,
     Space: Space,
     DividingView:DividingView,
+    MainTextColor:MainTextColor,
+    SubTextColor:SubTextColor,
     //大部分标题字体大小
     XGNFontSize:13,
     //导航颜色QINIUURL
