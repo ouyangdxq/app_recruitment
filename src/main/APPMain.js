@@ -54,8 +54,6 @@ class APPMain extends Component {
                 //tabBarShadowStyle={{width:0,height:0}}
             >
 
-
-
                 <TabNavigator.Item
                     title="职位"
                     selected={this.state.selectedTab === 'position'}

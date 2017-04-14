@@ -29,7 +29,7 @@ const FontSize15 = 15;
 const FontSize13 = 13;
 const ItemMinHeight=50;
 {/*红色背景*/ }
-const TitleBarBackGroundColor = '#e24d4d';
+const TitleBarBackGroundColor = '#f7741a';
 const PlaceholderColor = '#c7c7cd';
 //分割线
 const BorderBottomC = '#e1e1e1';
